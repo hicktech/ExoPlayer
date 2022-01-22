@@ -512,12 +512,12 @@ import org.checkerframework.checker.nullness.qual.MonotonicNonNull;
       }
       for (int i = 0; i < selectedLoadInfos.size(); i++) {
         RtpLoadInfo loadInfo = selectedLoadInfos.get(i);
-        if (!trackUrisWithTiming.contains(loadInfo.getTrackUri().getPath())) {
-          playbackException =
-              new RtspPlaybackException(
-                  "Server did not provide timing for track " + loadInfo.getTrackUri());
-          return;
-        }
+//         if (!trackUrisWithTiming.contains(loadInfo.getTrackUri().getPath())) {
+//           playbackException =
+//               new RtspPlaybackException(
+//                   "Server did not provide timing for track " + loadInfo.getTrackUri());
+//           return;
+//         }
       }
 
       for (int i = 0; i < trackTimingList.size(); i++) {
